@@ -1,0 +1,89 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section.ex производство
+			.layout.layout-b
+				.baum
+					.half-three
+						.half__wrap
+							img(src="static/svg/plant.svg", alt="").half__img
+							.half__text
+								p.desc-ml Производственные площади расположены в городе Правлово Нижегородской области
+					.half-three
+						.half__wrap
+							.half__title >100
+							.half__text
+								p.desc-ml человек штат персонала по состоянию на 2017 год
+					.half-three
+						.half__wrap
+							.half__title >3000м
+								sup 2
+							.half__text
+								p.desc-ml площадь производственных, складских и административных помещений
+
+		section.section.mod_first
+			.layout
+				ul.check__list
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Поддерживаем наличие 60 тонн различного металлопроката для сокращения сроков производства.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Внедренная технология лазерной резки позволяет нам вырезать отверстия на трубах различной формы, например – логотип.
+								p.desc-l Наша компания единственная в России производит парковочные столбики с логотипом!
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Окраска изделий производится методом напыления порошковой краски и цинкового порошкового грунта, что обеспечивает долгий срок службы наших изделий даже в условиях использования дорожных реагентов.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Упаковка изделий производится в коробки из пятислойного гофрированного картона, либо в индивидуальную упаковку. Данный вид упаковки защитит ваш груз в процессе перевозки и доставит его вам в безупречном состоянии. Каждая коробка маркируется для быстрой идентификации.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l На каждом этапе производства наши изделия проходят контроль качества. Изделия проверяются на:
+								ul.check__sublist
+									li.check__subitem  соответствие  геометрическим размерам;
+									li.check__subitem  качество сварных швов;
+									li.check__subitem  адгезию лакокрасочного покрытия.
+								p.desc-l Также проверяется сборка и комплектация.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Всегда в наличии на складе готовой продукции более 5000 единиц популярных изделий, что позволяет оперативно отгружать продукцию клиентам.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l Автопогрузчик позволяет нам быстро загружать продукцию в машины для отправки клиентам, экономя время водителей и человеческие ресурсы.
+					li.check__item
+						.check__wrap
+							.check__pic
+								img(src='static/svg/check-bird.svg', alt="").check__img
+							.check__text
+								p.desc-l На предприятии внедрена японская система бережливого производства «Кайдзен» - постоянное совершенствование процесса. Она позволяет нам на постоянной основе сокращать издержки производства, чтобы предоставлять нашим потребителям доступные цены и высокий уровень качества наших изделий.
+			.layout.layout-b
+				.baum.slide-four-dots
+					include module/prodSlide.pug
+					include module/prodSlide.pug
+
+		include layout/footer.pug

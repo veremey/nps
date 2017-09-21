@@ -1,0 +1,17 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section Наши проекты
+			.layout.layout-b
+				.baum
+					include module/proekt.pug
+					include module/proekt.pug
+					include module/proekt.pug
+					include module/proekt.pug
+				.more
+					a(href="#").more__btn
+						span Все проекты
+		include layout/footer.pug

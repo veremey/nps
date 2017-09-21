@@ -1,0 +1,106 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section.ex вакансии
+				.baum.mod-b-20
+					p.desc-l Уважаемые соискатели! Наша команда всегда рада появлению новых сотрудников. <br> <br>
+					p.desc-l Мы ищем активных и целеустремленных людей, желающих развиваться и достигать высоких результатов,  <br> способных доводить дела до конца и не останавливаться на достигнутом.
+
+				h2.title-medium.mod-b-10 Мы предлагаем:
+				.baum
+					ul.todo
+						li.todo__item
+							p.desc-h Работу в стабильно развивающейся компании (за 10 лет ни единой задержки з/п);
+						li.todo__item
+							p.desc-h Комфортные рабочие места;
+						li.todo__item
+							p.desc-h Оформление по ТК РФ с первого дня работы (отпуска, оплачиваемые б/л);
+						li.todo__item
+							p.desc-h Возможность карьерного роста (все руководители вышли из рядовых сотрудников);
+						li.todo__item
+							p.desc-h Много интересной работы, возможность самореализации
+
+
+		section.section-gray.mod_first
+			.layout
+				h3.title-section.ex На данный момент открыты вакансии:
+				h4.title-section Административный персонал
+				.vacancy
+					h5.vacancy__title Сварщик 5 разряда
+					p.vacancy__desc Требования:
+					ul.vacancy__list
+						li.vacancy__item
+							p.vacancy__desc Доброжелательны, внимательны, приятные собеседники;
+						li.vacancy__item
+							p.vacancy__desc Любите соревноваться;
+						li.vacancy__item
+							p.vacancy__desc Хотите много зарабатывать.
+					.vacancy__hidden
+						ul.vacancy__list
+							li.vacancy__item
+								p.vacancy__desc Доброжелательны, внимательны, приятные собеседники;
+							li.vacancy__item
+								p.vacancy__desc Любите соревноваться;
+							li.vacancy__item
+								p.vacancy__desc Хотите много зарабатывать.
+		section.section-gray.mod_first.bd-t
+			.layout
+				h4.title-section производственный персонал
+				.vacancy
+					h5.vacancy__title Сварщик 5 разряда
+					p.vacancy__desc Требования:
+					ul.vacancy__list
+						li.vacancy__item
+							p.vacancy__desc Доброжелательны, внимательны, приятные собеседники;
+						li.vacancy__item
+							p.vacancy__desc Любите соревноваться;
+						li.vacancy__item
+							p.vacancy__desc Хотите много зарабатывать.
+					.vacancy__hidden
+						p.vacancy__desc Если Вы:
+						ul.vacancy__list
+							li.vacancy__item
+								p.vacancy__desc Доброжелательны, внимательны, умеете быть приятным собеседником;
+							li.vacancy__item
+								p.vacancy__desc Ищете возможность реализовать себя, уверенны в себе;
+							li.vacancy__item
+								p.vacancy__desc Любите соревнования;
+							li.vacancy__item
+								p.vacancy__desc Хотите много зарабатывать
+
+						p.vacancy__desc Тогда мы для Вас предлагаем:
+						ul.vacancy__list
+							li.vacancy__item
+								p.vacancy__desc Обучение технологии продаж, тренировки, считаете, что не умеете продавать – научим!
+							li.vacancy__item
+								p.vacancy__desc Огромный рынок сбыта, клиентскую базу предоставим;
+							li.vacancy__item
+								p.vacancy__desc Игры с ценными призами (подарочные сертификаты, техника, билеты в аквапарк, базу отдыха и пр.);
+							li.vacancy__item
+								p.vacancy__desc Карьерный рост до начальника отдела продаж и выше;
+							li.vacancy__item
+								p.vacancy__desc Официальное трудоустройство с первого дня работы;
+							li.vacancy__item
+								p.vacancy__desc З/п: оклад 15.000 + % с личных продаж + премия при выполнении плана + премия лучшему за месяц 10 000 руб.!
+						p.vacancy__desc Заявки на собеседование принимаются до 15.08.2017г.
+						p.vacancy__desc
+							b.desc-bold Если Вам это подходит заполните анкету!
+						a(href="#").btn.btn-text Заполнить анкету
+
+		section.section.mod_first
+			.layout
+				p.desc-b.mod-b-10 Если Вы хотите стать частью нашей дружной команды, звоните: 8-952-472-88-48, 8-950-616-58-10
+				h2.title-section наша корпоративная жизнь
+				.baum.mod-b-20
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+				.layout
+					.baum.slide-four-dots
+						include module/prodSlide.pug
+						include module/prodSlide.pug
+		include layout/footer.pug

@@ -1,0 +1,64 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				ul.breadhumbs
+					li.breadhumbs__item
+						a(href="#").breadhumbs__link Каталог
+						| &#8725;
+					li.breadhumbs__item  Парковочные столбики
+				h2.title-section Парковочные столбики
+				.det
+					.det__item
+						.det__pic
+							img(src="static/img/preview/03.jpg", alt="").det__img
+						p.desc-n Город
+							sup 14
+					.det__item
+						.det__pic
+							img(src="static/img/preview/03.jpg", alt="").det__img
+						p.desc-n Город
+							sup 14
+					.det__item
+						.det__pic
+							img(src="static/img/preview/03.jpg", alt="").det__img
+						p.desc-n Город
+							sup 14
+			<hr>
+
+			section.section.mod_first
+				.layout
+					h3.title-section город
+					.baum.slide-four
+						include module/baum.pug
+						include module/baum.pug
+			section.section-gray.mod_first
+				.layout
+					h3.title-section город
+					.baum.slide-four
+						include module/baum.pug
+						include module/baum.pug
+			section.section.mod_first
+				.layout
+					h3.title-section город
+					.baum.slide-four
+						include module/baum.pug
+						include module/baum.pug
+			section.section-gray.mod_first
+				.layout
+					h3.title-section город
+					.baum.slide-four
+						include module/baum.pug
+						include module/baum.pug
+			section.section
+				.layout
+					h3.title-section сео текст
+					p.desc-l Наиболее частое применение парковочных столбиков - подзеемные парковки, многоуровневые парковки, парковки у торговых центров, административных и офисных зданий, а также для ограждения проезжей части и пешеходной зоны.
+					<br>
+					p.desc-l Парковочные столбики помогают предотвратить въезд транспорта на газоны и бордюры. Также последнее время пользуется популярностью установка столбиков на дворовых территориях жилых домов для разграничения стоянки.
+					<br>
+					p.desc-l Предлагаем на выбор несколько вариантов парковочных столбиков, имеющих различия в размерах, ценах и технических характеристиках.
+
+		include layout/footer.pug

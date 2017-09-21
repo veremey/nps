@@ -1,0 +1,165 @@
+extends _layout
+block content
+
+	-var adv = [ {item: {pic: "static/svg/advi/01.svg", text: "Низкие цены и скидки до 30%"}}, {item: {pic: "static/svg/advi/02.svg", text: "Всегда в наличии более 5 000 товаров"}}, {item: {pic: "static/svg/advi/03.svg", text: "12 334 отгруженных заказов"}}, {item: {pic: "static/svg/advi/04.svg", text: "2500 довольных клиентов"}}, {item: {pic: "static/svg/advi/05.svg", text: "396 дилеров по России и СНГ"}}, {item: {pic: "static/svg/advi/06.svg", text: "10 лет уверенного развития"}}, {item: {pic: "static/svg/advi/07.svg", text: "Система бережливого производства Кайдзен"}}, {item: {pic: "static/svg/advi/08.svg", text: "Двойное покрытие изделий с гарантией"}}];
+
+
+	.out
+		include layout/header.pug
+		section.section.mod_first.mod-b-0
+			.layout
+				.jumb
+					.jumb__item
+						.jumb__pic
+							img(src="static/img/car.jpg", alt="").jumb__img
+						.jumb__text
+							h4.jumb__title ПРОИЗВОДСТВО И ДОСТАВКА ОБОРУДОВАНИЯ ДЛЯ ДОРОГ И ПАРКОВОК
+							p.jumb__desc Всегда в наличии на складе более 5 000 единиц популярной продукции готовых к отправке.
+							a(href="#").jumb__btn Купить по выгодной цене от производителя
+					.jumb__item
+						.jumb__pic
+							img(src="static/img/car-02.jpg", alt="").jumb__img
+						.jumb__text
+							h4.jumb__title ПРОИЗВОДСТВО И ДОСТАВКА ОБОРУДОВАНИЯ ДЛЯ ДОРОГ И ПАРКОВОК
+							p.jumb__desc Всегда в наличии на складе более 5 000 единиц популярной продукции готовых к отправке.
+							a(href="#").jumb__btn Купить по выгодной цене от производителя
+
+		section.section
+			.layout
+				h2.title-section.ex.mod-center сферы применения
+				.sf
+					.sf__item
+						img(src="static/svg/sf-01.svg", alt="").sf__pic
+						p.sf__desc Дороги
+					.sf__item
+						img(src="static/svg/sf-02.svg", alt="").sf__pic.fix-ps
+						p.sf__desc Парковки
+					.sf__item
+						img(src="static/svg/sf-03.svg", alt="").sf__pic
+						p.sf__desc Склады
+					.sf__item
+						img(src="static/svg/sf-04.svg", alt="").sf__pic
+						p.sf__desc Массовые мероприятия
+
+		section.section-gray
+			.layout
+				h2.title-section.ex.mod-center популярные категории
+			.layout.layout-b
+				.baum
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/01.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/02.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/03.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/01.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/02.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+					.prod
+						.prod__item
+							.prod__pic
+								img(src="static/img/prod/03.jpg", alt="picture").prod__img
+							.prod__footer
+								p.prod__title Противотаранные барьеры
+
+		section.section
+			.layout
+				h2.title-section.ex.mod-center о компании
+			.layout.layout-b
+				.baum
+					.half.half-40
+						.corder
+							p.corder__desc Производственное предприятие OOO "НПС-Автоматика" образовано в 2007 году и входит в состав  Группы Компаний "НПС" (
+								a(href="www.nps-avtomatika.ru").corder__link www.nps-avtomatika.ru
+								| ,
+								a(href="www.rusinvertor.ru").corder__link www.rusinvertor.ru
+								| ).
+							p.corder__desc Компания располагается в городе Павлово Нижегородской области.
+						.corder__pic
+							img(src="static/img/office.jpg", alt="").corder__img
+
+					.half.half-60
+						p.desc-l Предприятие создано для удовлетворения спроса потребителей в области производства и поставки оборудования для дорог и парковок. По состоянию на 2014 год штат персонала насчитывает более 100 человек. Площадь производственных, складских и административных помещений составляет 2500 кв.м. Производственный цикл включает в себя все основные операции металлообработки, изготовления электронных печатных плат и нанесения лакокрасочных покрытий. Имеется проектный отдел, отдел технического качества и квалификации персонала, что обеспечивает гибкость производства и высокое качество производимых изделий. Отдел логистики предложит оптимальные варианты доставки наших продуктов в любой регион России и за ее пределами.  <br> <br>
+						p.desc-l На предприятии внедрены основные принципы Бережливого Производства (Кайдзен, Lean-management). Внедрение этих передовых методов администрирования качества позволяет на постоянной основе сокращать издержки производства, что позволяет предоставлять нашим потребителям доступные цены и высокий уровень качества наших изделий. <br> <br>
+						p.desc-l Многолетний опыт работы в области производства оборудования для дорог и парковок, обширная география продаж и положительные отзывы наших клиентов свидетельствуют о том, что наша компания является надежным поставщиком, к которому клиенты возвращаются снова.
+
+		section.section-gray
+			.layout
+				h2.title-section.ex.mod-center популярные категории
+				.adv
+					each d in adv
+						.adv__item
+							img(src=d.item.pic, alt="").adv__img
+							p.adv__desc #{d.item.text}
+
+		section.section
+			.layout
+				h2.title-section.ex.mod-center Наши работы
+				.slide-three
+					include module/proekt.pug
+					include module/proekt.pug
+
+		section.section-gray
+			.layout
+				h2.title-section.ex.mod-center отзывы
+				.comment
+					.comment__item
+						.comment__wrap
+							.comment__text
+								p.desc-l.mod-ital Вещь действительно уникальная! Мало того, что пользоваться просто (встряхнул баллон и распылил), так и следов после использования не оставляет. А это важно! Плюсом продукта является качество продукта. Очень много вещей я спас исключительно благодаря пятновыводителю. Например, засаленные воротнички рабочей одежды различного характера отстирывает без проблем. Много вещей спас с пятнами от овощей и фруктов, с жевательной резиной или чернилами. С появлением ребёнка расход продукта стал значительно увеличиваться))) Я даже боюсь.... представить, чтобы было если бы спрея не было. Так как очень быстро и качественно удалить большинство из этих пятен просто не представлялось возможным. В общем рекомендую!
+						.comment__author
+							p.comment__desc Свалов И.В., ген.директор ОАО "Интурист"
+					.comment__item
+						.comment__wrap
+							.comment__text
+								p.desc-l.mod-ital Вещь действительно уникальная! Мало того, что пользоваться просто (встряхнул баллон и распылил), так и следов после использования не оставляет. А это важно! Плюсом продукта является качество продукта. Очень много вещей я спас исключительно благодаря пятновыводителю. Например, засаленные воротнички рабочей одежды различного характера отстирывает без проблем. Много вещей спас с пятнами от овощей и фруктов, с жевательной резиной или чернилами. С появлением ребёнка расход продукта стал значительно увеличиваться))) Я даже боюсь.... представить, чтобы было если бы спрея не было. Так как очень быстро и качественно удалить большинство из этих пятен просто не представлялось возможным. В общем рекомендую!
+						.comment__author
+							p.comment__desc Свалов И.В., ген.директор ОАО "Интурист"
+					.comment__item
+						.comment__wrap
+							.comment__text
+								p.desc-l.mod-ital Вещь действительно уникальная! Мало того, что пользоваться просто (встряхнул баллон и распылил), так и следов после использования не оставляет. А это важно! Плюсом продукта является качество продукта. Очень много вещей я спас исключительно благодаря пятновыводителю. Например, засаленные воротнички рабочей одежды различного характера отстирывает без проблем. Много вещей спас с пятнами от овощей и фруктов, с жевательной резиной или чернилами. С появлением ребёнка расход продукта стал значительно увеличиваться))) Я даже боюсь.... представить, чтобы было если бы спрея не было. Так как очень быстро и качественно удалить большинство из этих пятен просто не представлялось возможным. В общем рекомендую!
+						.comment__author
+							p.comment__desc Свалов И.В., ген.директор ОАО "Интурист"
+				.more
+					a(href="#").more__btn
+						span Все отзывы
+		section.section
+			.layout
+				a(data-fancybox href="https://www.youtube.com/watch?v=8z8NGkM3wtY").vidos.vidos-height
+					img(src="static/img/car-02.jpg", alt="").vidos__img
+					span.vidos__text Установка оборудования для парковок (видео)
+		.prefooter
+			img(src="static/img/prefooter.jpg", alt="").prefooter__bg
+			.prefooter__text
+				h3.prefooter__title Заинтересовались нашей продукцией?
+				h6.prefooter__subtitle позвоните нам
+				.precall
+					a(href="tel:88007778239").prefooter__tel 8 800 777 82 39
+					p.prefooter__desc Звонок по России бесплатный!
+				p.prefooter__desc Так же вы можете заказать обратный звонок.
+				p.prefooter__desc Наш менеджер свяжется с Вами в течении 5 минут и ответит на все интересующие вопросы
+				a(href="#").prefooter__btn заказать звонок
+
+		include layout/footer.pug

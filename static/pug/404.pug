@@ -1,0 +1,19 @@
+extends _layout
+block content
+
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				.error
+					img(src="static/img/404.jpg", alt="").error__img
+					.error__text
+						h5.error__title Ошибка могла произойти по нескольким причинам:
+						ul.error__list
+							li.error__item Вы ввели неправильный адрес;
+							li.error__item Страница, на которую вы хотели зайти, устарела и была удалена;
+							li.error__item Акция, ранее действовавшая на сайте закончилась;
+							li.error__item.spesial-dot На сервере произошла ошибка. Если так, то мы уже знаем о ней и обязательно исправим.
+
+
+		include layout/footer.pug

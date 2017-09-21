@@ -1,0 +1,42 @@
+// Normally btn
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-transform: uppercase
+	border: none
+	outline: none
+	border-radius: 4px
+	color: #fff
+	font-size: 16px
+	+fb
+	&_search
+		display: flex
+		height: 50px
+		letter-spacing: .05em
+		flex: 0 1 180px
+		+g(#FD8500, #FD8500)
+		&:hover
+			+g(#FD8500, #FD8500)
+	&-red
+		+g(#FF5B5B, #FD0E0E)
+		flex: 0 1 180px
+		height: 50px
+		border-bottom: 1px solid #D40A0A
+		&:hover
+			+g(#FD0E0E, #FF5B5B)
+	&-text
+		+g(#fd8400, #fd7400)
+		display: inline-block
+		border-bottom: 2px solid #d46200
+		color: #fff
+		padding: 20px
+		margin-top: 10px
+		text-shadow: 0 1px 1px #000
+		&:hover
+			text-shadow: none
+			// border-color: $n
+
+	&_menu
+		display: none

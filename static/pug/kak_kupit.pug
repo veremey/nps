@@ -1,0 +1,75 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section как купить
+				h2.title-medium Для приобретения стандартной продукции нашего производства вам нужно:
+		section.section.mod_first
+			.layout
+				.order
+					.order__item
+						.order__pic
+							img(src="static/svg/order-01.svg", alt="").order__img
+						.order__text
+							p.order__desc Позвонить в отдел продаж по бесплатному номеру 8 800 777 82 39 или прислать запрос на электронную почту
+								a(href="mailto:sales1@nps-prom.ru").order__link sales1@nps-prom.ru
+					.order__item
+						.order__pic
+							img(src="static/svg/order-02.svg", alt="").order__img
+						.order__text
+							p.order__desc Получить счет на оплату
+					.order__item
+						.order__pic
+							img(src="static/svg/order-03.svg", alt="").order__img
+						.order__text
+							p.order__desc Оплатить счет
+					.order__item
+						.order__pic
+							img(src="static/svg/order-04.svg", alt="").order__img
+						.order__text
+							p.order__desc Получить заказ удобным для Вас способом
+				p.desc-b Мы можем изготовить любое нестандартное изделие, по вашему техническому заданию, нужного вам размера, формы и цвета.
+
+		section.section-gray
+			.layout
+				h2.title-medium Для приобретения стандартной продукции нашего производства вам нужно:
+				.order.order-3.offset-top-60.offset-bottom-0
+					.order__item
+						.order__pic
+							img(src="static/svg/order-05.svg", alt="").order__img
+						.order__text
+							p.order__desc Отправить техническое задание на почту
+								a(href="mailto:sales1@nps-prom.ru").order__link sales1@nps-prom.ru
+								| , указав характеристики, количество, приложить чертеж или картинку (если есть)
+					.order__item
+						.order__pic
+							img(src="static/svg/order-06.svg", alt="").order__img
+						.order__text
+							p.order__desc В течение 10 минут наши менеджеры свяжутся с Вами для уточнения деталей, после чего передадут заявку в конструкторский отдел
+					.order__item
+						.order__pic
+							img(src="static/svg/order-07.svg", alt="").order__img
+						.order__text
+							p.order__desc Получить расчет стоимости, эскиз. Среднее время расчета заявок – 60 минут
+				.order-layer
+				.order.order-3.offset-top-60
+					.order__item
+						.order__pic
+							img(src="static/svg/order-08.svg", alt="").order__img
+						.order__text
+							p.order__desc Подписать договор поставки. Получить счет
+
+					.order__item
+						.order__pic
+							img(src="static/svg/order-03.svg", alt="").order__img
+						.order__text
+							p.order__desc Оплатить счет
+					.order__item
+						.order__pic
+							img(src="static/svg/order-04.svg", alt="").order__img
+						.order__text
+							p.order__desc Получить заказ удобным для Вас способом
+
+		include layout/footer.pug

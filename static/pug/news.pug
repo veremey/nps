@@ -1,0 +1,20 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section НОВОСТИ
+			.layout.layout-b
+				.baum
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+					include module/pocket-news.pug
+				.more
+					a(href="#").more__btn
+						span Архив новостей
+
+		include layout/footer.pug

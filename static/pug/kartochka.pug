@@ -1,0 +1,97 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				ul.breadhumbs
+					li.breadhumbs__item
+						a(href="#").breadhumbs__link Каталог
+						| &#8725;
+					li.breadhumbs__item
+						a(href="#").breadhumbs__link Парковочные столбики
+						| &#8725;
+					li.breadhumbs__item Столбик передвижной серии «Город»
+				h2.title-section Столбик передвижной серии «Город»
+				section.section-wrap-col
+					aside.aside
+						.preview
+							.preview__top
+								.preview__big
+									.preview__box
+										img(src="static/img/baum/01.jpg", alt="").preview__boxim
+								.preview__big
+									.preview__box
+										img(src="static/img/baum/02.jpg", alt="").preview__boxim
+								.preview__big
+									.preview__box
+										img(src="static/img/baum/01.jpg", alt="").preview__boxim
+								.preview__big
+									.preview__box
+										img(src="static/img/baum/01.jpg", alt="").preview__boxim
+							.preview__bottom
+								.preview__small
+									.preview__nav
+										img(src="static/img/preview/01.jpg", alt="").preview__navim
+								.preview__small
+									.preview__nav
+										img(src="static/img/preview/02.jpg", alt="").preview__navim
+								.preview__small
+									.preview__nav
+										img(src="static/img/preview/01.jpg", alt="").preview__navim
+								.preview__small
+									.preview__nav
+										img(src="static/img/preview/01.jpg", alt="").preview__navim
+					main.main
+						.border-top
+							.border__item
+								h4.title-medium Характеристики
+								p.desc-l.mod-col Тип крепления: 4 анкерных болта
+								p.desc-l.mod-col Материал изготовления: труба черная
+								p.desc-l.mod-col Диаметр трубы: 76 mm
+								p.desc-l.mod-col Высота: 750 mm
+								p.desc-l.mod-col Материал изготовления: труба черная
+								p.desc-l.mod-col Толщ. стенки: 1.5 mm
+								p.desc-l.mod-col Толщ. основания: 4 mm
+
+							.border__item
+								h4.title-medium Транспортные характеристики
+								p.desc-l.mod-col Масса: 2,65 кг
+								p.desc-l.mod-col Расчетный объем 1 штуки: 0,02 м3
+								p.desc-l.mod-col Тип упаковки: картог гофр. 5-слойный
+								p.desc-l.mod-col Жесткая упакова: не требуется
+						.empty-flex
+							p.desc-m Розничная цена за шт.: &nbsp;
+								span.price 1200
+							a(href="#").btn.btn-red
+								img(src="static/svg/icon-basket.svg", alt="").icon-basket
+								| как КуПить?
+						.border-bottom
+							.border__item
+								h4.title-medium Описание
+								p.desc-l Покрытие – цинковый порошковый грунт + порошковая краска.
+								p.desc-l Цвет и структура поверхности в серийном производстве – серебристый глянец + 2 красные светоотражающие полоски (при заказе от 50 штук может быть любым)
+
+							.border__item
+								h4.title-medium преимущества
+								p.desc-l.desc-list Аккуратный внешний вид.
+								p.desc-l.desc-list Верх типа «Грибок»
+
+							.border__item
+								h4.title-medium Применение
+								p.desc-l Ограждение пешеходной зоны, зоны парковки
+							.border__item
+								h4.title-medium монтаж
+								p.desc-l Массивное основание
+						a(data-fancybox href="https://www.youtube.com/watch?v=8z8NGkM3wtY").vidos
+							img(src="static/img/car-02.jpg", alt="").vidos__img
+
+		section.section-gray
+			.layout
+				h4.title-section С этим товаром покупают
+				.baum.slide-four
+					include module/baum.pug
+					include module/baum.pug
+					include module/baum.pug
+
+		include layout/footer.pug

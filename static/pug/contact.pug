@@ -1,0 +1,50 @@
+extends _layout
+block content
+	scriptFooter
+		script(src="static/js/mapOptions.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0yJ64y2XfLC-sKsba8Aj4uk54Ew8AXKc&callback=initMap" async defer)
+
+	.out
+		include layout/header.pug
+		section.section.mod_first.mod-b-0
+			.layout
+				h2.title-section.ex контакты
+				.order.order-flex
+					.order__item.order__item-3
+						h4.title-medium Телефоны:
+						p.desc-n 8-800-777-82-39 – бесплатный по России
+						p.desc-n 8 (831) 429-02-38 – многоканальный
+					.order__item.order__item-3
+						h4.title-medium Эл.почта отдела продаж:
+						p.desc-n
+							a(href="mailto:sales1@nps-prom.ru").order__link market@nps-prom.ru
+						p.desc-n
+							a(href="mailto:sales1@nps-prom.ru").order__link market@nps-prom.ru
+					.order__item.order__item-3
+						h4.title-medium Эл.почта отдела снабжения:
+						a(href="mailto:sales1@nps-prom.ru").order__link market@nps-prom.ru
+				.order.order-flex
+					.order__item.order__item-3
+						h4.title-medium Адрес офиса и склада:
+						p.desc-n Россия, Нижегородская область, г. Павлово,
+						p.desc-n ул. 1-я Северная, 39
+						p.desc-n Схема проезда:
+							a(href="static/svg/truck.svg", download).order__link скачать
+					.order__item.order__item-3
+						h4.title-medium Режим работы:
+						p.desc-n Отдел продаж: пн-пт, с 8:30 до 17:00 (Мск)
+						p.desc-n Время отгрузки со склада: пн-пт, с 8:30 до 16:00
+					.order__item.order__item-3
+						h4.title-medium Реквизиты:
+						p.desc-n ООО «НПС-Автоматика»
+						p.desc-n ИНН/КПП: 5252034215/525201001
+						p.desc-n ОГРН: 1135252005008
+				.sotr
+					.sotr__wrap
+						.sotr__icon
+							img(src="static/svg/hands-orange.svg", alt="")
+						p.desc-n Приглашаем к сотрудничеству поставщиков металлопроката, порошковых красок, компании, осуществляющие грузоперевозки по Росcии.
+
+		#map
+
+		include layout/footer.pug

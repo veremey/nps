@@ -1,0 +1,28 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section выдача запросу "шлагбаум"
+					sup 15 товаров
+				h3.title-medium категории:
+				ul.category
+					li.category__item
+						a(href="#").category__link Шлагбаумы
+					li.category__item
+						a(href="#").category__link Автоматические шлагбаумы
+					li.category__item
+						a(href="#").category__link Ручные шлагбаумы
+					li.category__item
+						a(href="#").category__link Скоростные автоматические шлагбаумы
+			<hr>
+
+			section.section.mod_first
+				.layout.layout-b
+					.baum.baum-mob-c
+						include module/baum.pug
+						include module/baum.pug
+						include module/baum.pug
+						include module/baum.pug
+		include layout/footer.pug

@@ -1,0 +1,63 @@
+extends _layout
+block content
+	-var partn = [{item: {pic: 'static/svg/partner/01.svg', text: 'Монтажные и строительные организации;'}}, {item: {pic: 'static/svg/partner/02.svg', text: 'ЖКХ, ТСЖ;'}}, {item: {pic: 'static/svg/partner/03.svg', text: 'Торговые компании в сфере дорожно-парковочного оборудования;'}}, {item: {pic: 'static/svg/partner/04.svg', text: 'Cклады и логистические центры;'}}, {item: {pic: 'static/svg/partner/05.svg', text: 'Торговые центры, паркинги, автосалоны, аэропорты, ж/д вокзалы;'}}, {item: {pic: 'static/svg/partner/06.svg', text: 'Участников государственных закупок;'}}, {item: {pic: 'static/svg/partner/07.svg', text: 'Администрации городов;'}}, {item: {pic: 'static/svg/partner/08.svg', text: 'Организации, занимающиеся обеспечением безопасности стратегических объектов;'}}, {item: {pic: 'static/svg/partner/09.svg', text: 'Организации, занимающиеся подготовкой мероприятий, концертов;'}}, {item: {pic: 'static/svg/partner/10.svg', text: 'Проектные организации.'}}];
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section Оптовикам
+			.layout.layout-b
+				.baum
+					.half
+						.half__wrap
+							img(src="static/svg/hands.svg", alt="").half__img
+							p.desc-l Производственная компания «НПС-Автоматика» приглашает к сотрудничеству организации, задействованные в сфере обустройства дорог и парковок, а также обеспечения безопасности государственных объектов.
+					.half
+						.half__wrap
+							img(src="static/svg/diamant.svg", alt="").half__img
+							p.desc-l Мы заинтересованы в выстраивании взаимовыгодных партнерских отношений, постоянно повышаем уровень качества изделий и уровень обслуживания клиентов.
+
+		section.section-gray.mod_first
+			.layout
+				h2.title-large Мы приглашаем к сотрудничеству:
+				ul.partner__list
+					each partner in partn
+						li.partner__item
+							.partner__wrap
+								.partner__pic
+									img(src=partner.item.pic, alt="").partner__img
+								p.partner__desc #{partner.item.text}
+
+
+		section.section
+			.layout
+				h2.title-large Работая с нами вы получаете:
+				.order.order-flex
+					.order__item.order__item_flex
+						.order__pic
+							img(src="static/svg/percent.svg", alt="").order__img
+						.order__text
+							p.order__desc Покупка напрямую от производителя по оптовым ценам
+					.order__item.order__item_flex
+						.order__pic
+							img(src="static/svg/boxes.svg", alt="").order__img
+						.order__text
+							p.order__desc Более 5000 единиц готовой продукции на складе для быстрой отправки
+					.order__item.order__item_flex
+						.order__pic
+							img(src="static/svg/doc.svg", alt="").order__img
+						.order__text
+							p.order__desc Изготовление продукции по вашему техническому заданию в короткий срок
+
+					.order__item.order__item_flex
+						.order__pic
+							img(src="static/svg/truck.svg", alt="").order__img
+						.order__text
+							p.order__desc Организация выгодной логистики
+					.order__item.order__item_flex.order__item_flex-wide
+						.order__pic
+							img(src="static/svg/detalka.svg", alt="").order__img
+						.order__text
+							p.order__desc Высокое качество: наши изделия имеют безупречный внешний вид, а двойное покрытие защищает от внешних воздействий в процессе эксплуатации
+
+		include layout/footer.pug

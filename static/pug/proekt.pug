@@ -1,0 +1,92 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		section.section.mod_first
+			.layout
+				h2.title-section.ex производство
+				.preview__wide
+					.preview__big
+						.preview__box
+							img(src="static/img/proekt/01.jpg", alt="").preview__boxim
+					.preview__big
+						.preview__box
+							img(src="static/img/proekt/02.jpg", alt="").preview__boxim
+					.preview__big
+						.preview__box
+							img(src="static/img/proekt/03.jpg", alt="").preview__boxim
+					.preview__big
+						.preview__box
+							img(src="static/img/proekt/04.jpg", alt="").preview__boxim
+				.preview__little
+					.preview__small
+						.preview__nav
+							img(src="static/img/proekt/01.jpg", alt="").preview__navim
+					.preview__small
+						.preview__nav
+							img(src="static/img/proekt/02.jpg", alt="").preview__navim
+					.preview__small
+						.preview__nav
+							img(src="static/img/proekt/03.jpg", alt="").preview__navim
+					.preview__small
+						.preview__nav
+							img(src="static/img/proekt/04.jpg", alt="").preview__navim
+			.layout.layout-b
+				.baum.baum-flex
+					.half.half-stratch.half-border
+						.half__conteiner
+							p.desc-l Объект: г. Москва, Каширское шоссе, д. 39б, Гостиница "Интурист"
+							p.desc-l Сроки: 1 день
+							p.desc-l Дата: 12.05.2016
+							p.desc-l Решение: ДР-ВП-2 Демпфер рулонный из вспененного полиэтилена (4 рулона)
+
+					.half.half-stratch.half-gray
+						.half__conteiner
+							h4.title-medium Описание
+							.half__text
+								p.desc-l Покрытие – цинковый порошковый грунт + порошковая краска.<br> Цвет и структура поверхности в серийном производстве – серебристый глянец + 2 красные светоотражающие полоски (при заказе от 50 штук может быть любым)
+
+		section.section.mod_first
+			.layout
+				h4.title-section Используемое оборудование
+			.layout.layout-b
+				.baum
+					.baum__item
+						.baum__pic
+							img(src="static/img/baum/01.jpg", alt="picture").baum__img
+						.baum__footer
+							p.baum__desc Столбик бетонируемый серии «Город» CA-76
+							strong.price 721
+						.baum__get
+							img(src="static/img/icons/icon-check-green.png", alt="").baum__get_icon.icon-check-green
+							p.baum__get_desc В наличии
+					.baum__item
+						.baum__pic
+							img(src="static/img/baum/01.jpg", alt="picture").baum__img
+						.baum__footer
+							p.baum__desc Столбик бетонируемый серии «Город» CA-76
+							strong.price 1200
+						.baum__get
+							img(src="static/img/icons/icon-check-red.png", alt="").baum__get_icon.icon-check-red
+							p.baum__get_desc Нет в наличии
+					.baum__item
+						.baum__pic
+							img(src="static/img/baum/01.jpg", alt="picture").baum__img
+						.baum__footer
+							p.baum__desc Столбик бетонируемый серии «Город» CA-76
+							strong.price 1200
+						.baum__get
+							img(src="static/img/icons/icon-check-red.png", alt="").baum__get_icon.icon-check-red
+							p.baum__get_desc Нет в наличии
+
+		section.section-gray
+			.layout
+				h4.title-section Отзыв заказчика
+			.layout.layout-b
+				.baum.baum-flex-start
+					img(src="static/svg/comment-01.svg", alt="").half__img
+					p.desc-l.mod-ital  Вещь действительно уникальная! Мало того, что пользоваться просто (встряхнул баллон и распылил), так и следов после использования не оставляет. А это важно! Плюсом продукта является качество продукта. Очень много вещей я спас исключительно благодаря пятновыводителю. Например, засаленные воротнички рабочей одежды различного характера отстирывает без проблем. Много вещей спас с пятнами от овощей и фруктов, с жевательной резиной или чернилами. С появлением ребёнка расход продукта стал значительно увеличиваться))) Я даже боюсь представить, чтобы было если бы спрея не было. Так как очень быстро и качественно удалить большинство из этих пятен просто не представлялось возможным. В общем рекомендую!
+			.layout
+				.author
+					p.author__desc Свалов И.В., ген.директор ОАО" Интурист"
+		include layout/footer.pug
