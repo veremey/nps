@@ -31,27 +31,27 @@ block content
 			section.section.mod_first
 				.layout
 					h3.title-section город
-					.baum.slide-four
-						include module/baum.pug
-						include module/baum.pug
+					.baum.baum-margin
+						include module/baum-catalog.pug
+						include module/baum-catalog.pug
 			section.section-gray.mod_first
 				.layout
 					h3.title-section город
-					.baum.slide-four
-						include module/baum.pug
-						include module/baum.pug
+					.baum.baum-margin
+						include module/baum-catalog.pug
+						include module/baum-catalog.pug
 			section.section.mod_first
 				.layout
-					h3.title-section город
-					.baum.slide-four
-						include module/baum.pug
-						include module/baum.pug
+					h3.title-section Эконом
+					.baum.baum-margin
+						include module/baum-catalog.pug
+						include module/baum-catalog.pug
 			section.section-gray.mod_first
 				.layout
 					h3.title-section город
-					.baum.slide-four
-						include module/baum.pug
-						include module/baum.pug
+					.baum.baum-margin
+						include module/baum-catalog.pug
+						include module/baum-catalog.pug
 			section.section
 				.layout
 					h3.title-section сео текст
@@ -62,3 +62,6 @@ block content
 					p.desc-l Предлагаем на выбор несколько вариантов парковочных столбиков, имеющих различия в размерах, ценах и технических характеристиках.
 
 		include layout/footer.pug
+		.popup.is-active
+			.popup__overlay.is-active
+			include module/ppp-call.pug

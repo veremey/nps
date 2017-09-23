@@ -63,7 +63,7 @@ block content
 						.empty-flex
 							p.desc-m Розничная цена за шт.: &nbsp;
 								span.price 1200
-							a(href="#").btn.btn-red
+							a(href="#", data-ppp="js-zayavka").js-ppp.btn.btn-red
 								img(src="static/svg/icon-basket.svg", alt="").icon-basket
 								| как КуПить?
 						.border-bottom
@@ -95,3 +95,6 @@ block content
 					include module/baum.pug
 
 		include layout/footer.pug
+		.popup.is-active
+			.popup__overlay.is-active
+			include module/ppp-zayavka.pug

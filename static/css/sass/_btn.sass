@@ -11,14 +11,34 @@
 	color: #fff
 	font-size: 16px
 	+fb
+	&.is-hidden
+		+gray
+		cursor: default
 	&_search
 		display: flex
 		height: 50px
 		letter-spacing: .05em
 		flex: 0 1 180px
+		border-bottom: 1px solid #d46200
+		+g(#FD8500, #FD8500)
+		+r(1000)
+			margin: 0 15px
+		+r(550)
+			display: none
+		&:hover
+			opacity: .9
+			border-color: $n
+	&-zakaz
+		display: inline-block
+		vertical-align: top
+		height: 50px
+		line-height: 50px
+		width: 170px
+		text-align: center
+		border-right: 4px
 		+g(#FD8500, #FD8500)
 		&:hover
-			+g(#FD8500, #FD8500)
+			opacity: .9
 	&-red
 		+g(#FF5B5B, #FD0E0E)
 		flex: 0 1 180px
@@ -38,5 +58,94 @@
 			text-shadow: none
 			// border-color: $n
 
-	&_menu
+	&-menu
 		display: none
+		position: relative
+		width: 52px
+		height: 52px
+		background-color: $n
+		border: 1px solid $border
+		border: none
+		outline: none
+		+r(1000)
+			display: inline-block
+		span
+			display: block
+			position: relative
+			height: 2px
+			width: 100%
+			background: $orange
+			border-radius: 2px
+			opacity: 1
+			left: 0
+			-webkit-transform: rotate(0deg)
+			-moz-transform: rotate(0deg)
+			-o-transform: rotate(0deg)
+			transform: rotate(0deg)
+			-webkit-transition: .25s ease-in-out
+			-moz-transition: .25s ease-in-out
+			-o-transition: .25s ease-in-out
+			transition: .25s ease-in-out
+			&:not(:first-child)
+				margin-top: 30%
+			&:nth-child(1)
+				-webkit-transform-origin: left center
+				-moz-transform-origin: left center
+				-o-transform-origin: left center
+				transform-origin: left center
+			&:nth-child(2)
+				-webkit-transform-origin: left center
+				-moz-transform-origin: left center
+				-o-transform-origin: left center
+				transform-origin: left center
+			&:nth-child(3)
+				-webkit-transform-origin: left center
+				-moz-transform-origin: left center
+				-o-transform-origin: left center
+				transform-origin: left center
+		&.is-active
+			z-index: 2005
+			span
+				background: #fff
+				&:nth-child(1)
+					-webkit-transform: rotate(45deg)
+					-moz-transform: rotate(45deg)
+					-o-transform: rotate(45deg)
+					transform: rotate(45deg)
+					width: 98%
+				&:nth-child(2)
+					width: 0%
+					opacity: 0
+				&:nth-child(3)
+					-webkit-transform: rotate(-45deg)
+					-moz-transform: rotate(-45deg)
+					-o-transform: rotate(-45deg)
+					transform: rotate(-45deg)
+					width: 98%
+	&-close
+		position: absolute
+		top: -20px
+		right: -20px
+		display: inline-block
+		vertical-align: top
+		width: 40px
+		height: 40px
+		background-color: #f7a521
+		border-radius: 100%
+		+r(700)
+			right: 10px
+		&:hover
+			color: $yellow
+			.st0
+				fill: #CCC
+	&-seach
+		position: relative
+		display: inline-block
+		width: 52px
+		height: 52px
+		+g(#e7e7e7, #c7cdd9)
+		border-bottom: 1px solid #a6b0ba
+		border-radius: 4px
+		&:hover
+			+g(#c7cdd9, #e7e7e7)
+			border-color: $n

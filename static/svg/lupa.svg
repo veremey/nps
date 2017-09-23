@@ -14,7 +14,8 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 47.25 47.5"
 	 style="enable-background:new 0 0 47.25 47.5;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#fff;stroke:#fff;}
 </style>
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
@@ -23,7 +24,7 @@
 	</foreignObject>
 	<g i:extraneous="self">
 		<g>
-			<path d="M22,5c9.374,0,17,7.626,17,17s-7.626,17-17,17S5,31.374,5,22S12.626,5,22,5 M22,0C9.85,0,0,9.85,0,22s9.85,22,22,22
+			<path class="st1" d="M22,5c9.374,0,17,7.626,17,17s-7.626,17-17,17S5,31.374,5,22S12.626,5,22,5 M22,0C9.85,0,0,9.85,0,22s9.85,22,22,22
 				c12.15,0,22-9.85,22-22S34.15,0,22,0L22,0z"/>
 		</g>
 		<g>

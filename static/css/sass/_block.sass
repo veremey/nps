@@ -4,6 +4,7 @@
 	&__item
 		display: inline-block
 		vertical-align: top
+		text-align: center
 		max-width: 275px
 		width: calc(25% - 20px)
 		min-height: 540px
@@ -12,7 +13,9 @@
 		padding: 20px
 		margin-right: 20px
 		margin-bottom: 20px
+		margin-top: 15px
 		border-radius: 6px
+		transition: .4s linear
 		+r(1000)
 			width: calc(33% - 20px)
 		+r(750)
@@ -21,6 +24,17 @@
 			width: 100%
 			margin-right: 0
 			margin: 0 auto 10px
+		&:hover
+			margin-top: 0
+			// +try(-15px)
+			// box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3)
+			// transition: .4s linear
+			.btn-zakaz
+				height: 50px
+				line-height: 50px
+				// margin-top: 12px
+				margin: 12px auto 0
+				transition: .4s linear
 		&.slick-slide
 			max-width: none
 	&__pic
@@ -48,18 +62,26 @@
 		margin-bottom: 10px
 		+fr
 	&__get
-		display: flex
-		align-items: center
-		justify-content: center
+		display: block
+		text-align: center
 		padding: 16px 0 0
 		&_icon
-			margin-right: 6px
+			display: inline-block !important
+			vertical-align: top
+			margin-right: 10px
 			transform: none !important
 		&_desc
-			margin: 0
+			display: inline-block
+			vertical-align: top
+			margin: 2px 0 0
 			font-size: 15px
 			color: #777
 			+pr
+	.btn-zakaz
+		height: 0
+		overflow: hidden
+		margin-top: 0
+		transition: .4s linear
 	&-last
 		margin-bottom: 20px
 	&-flex
@@ -78,6 +100,18 @@
 			width: 800px
 			max-width: 100%
 			margin: 0 auto !important
+	&-margin
+		margin-top: 15px
+		margin-bottom: 36px
+		transition: .4s linear
+		+r(650)
+			margin-right: 0
+		&.clear-margin
+			margin-top: 0
+			margin-bottom: 0
+			transition: .4s linear
+		.baum__item
+			max-width: none
 	&-mob-c
 		+r(650)
 			text-align: center
@@ -214,11 +248,13 @@
 
 .det
 	display: flex
-	margin-bottom: 30px
+	margin-bottom: 20px
+	flex-wrap: wrap
 	&__item
 		display: flex
 		align-items: center
 		margin-right: 40px
+		margin-bottom: 10px
 	&__pic
 		position: relative
 		width: 42px
