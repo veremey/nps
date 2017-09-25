@@ -22,11 +22,6 @@ $(document).ready(function() {
 		$(this).addClass('is-active').siblings('.guide__item').removeClass('is-active');
 	});
 
-	$('.baum__item').hover(function () {
-		$(this).parent('.baum').addClass('clear-margin');
-	}, function () {
-		$(this).parent('.baum').removeClass('clear-margin')
-	});
 
 	$('.btn-menu').on('click', function () {
 		$(this).toggleClass('is-active');
@@ -34,7 +29,7 @@ $(document).ready(function() {
 	});
 
 	$('.btn-seach').on('click', function () {
-		$('.header__search, .search').addClass('is-active');
+		$('.header__search, .search').toggleClass('is-active');
 	});
 
 	$(document).on('click', function(el){
