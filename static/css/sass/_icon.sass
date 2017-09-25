@@ -4,6 +4,26 @@
 // 		display: inline-block
 // 		+s(#{$s})
 
+.logo
+	#Layer_1
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		height: 100%
+		.st0
+			fill-rule: evenodd
+			clip-rule: evenodd
+		.st1
+			fill:none
+			stroke: #1B1918
+			stroke-width: 1.7008
+		.st10
+			fill: #f7a521
+			stroke: #f7a521
+			clip-rule: evenodd
+			fill-rule: evenodd
+
+
 .icon-phone
 	display: inline-block
 	vertical-align: top
@@ -30,6 +50,8 @@
 	+try(-50%)
 	display: inline-block
 	vertical-align: top
+	cursor: pointer
+
 .icon-check-red
 	display: inline-block
 	vertical-align: top
@@ -42,12 +64,14 @@
 	margin-right: 5px
 	background-image: url('../svg/icon-basket.svg')
 .icon-com
-	display: inline-block
+	display: inline-block !important
 	vertical-align: top
 	width: 18px
 	height: 17px
 	margin-right: 10px
 	background-image: url('../svg/icon-com.svg')
+	transform: none !important
+
 
 .icon-close
 	+vcenter

@@ -60,7 +60,8 @@ body
 	min-width: 200px
 	font-family:  Arial, sans-serif
 	font-size: 13px
-	-webkit-font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased !important
+	backface-visibility: hidden
 
 // common blocks
 .out
@@ -158,6 +159,14 @@ body
 		line-height: 35px
 		color: #777
 		+pb
+
+.link
+	font-size: 14px
+	line-height: inherit
+	color: $blue
+	text-decoration: underline
+	&:hover
+		text-decoration: none
 
 
 h1, h2, h3, h4, h5, h6

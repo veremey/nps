@@ -1,56 +1,100 @@
 .header
-	// background-color: #f2f2f2
+	+tr(.4s)
 	&__top
+		position: relative
 		background-color: #f2f2f2
+		height: 120px
+		z-index: 10
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			height: 94px
+			background-color: #f2f2f2
+			border-top: 2px solid #fff
+
 	.layout
-	// 	position: relative
-	// 	padding: 10px 0
+		position: relative
+		height: 100%
+		// 	padding: 10px 0
 		+r(1200)
 			padding: 0px 20px
 	&-l
-		width: 13%
+		width: 18%
 		min-width: 130px
+		justify-content: flex-start
+		+r(1000)
+			position: absolute
+			top: 10px
+			left: 50%
+			+trx(-50%)
+		+r(560)
+			position: static
+			top: 0px
+			left: 00%
+			+trx(0%)
 	&-r
-		position: relative
 		width: 85%
+		justify-content: flex-end
 		+r(1200)
 			width: 80%
 		+r(1050)
 			width: 100%
 			margin-left: 20px
 		+r(1000)
-			justify-content: flex-end
+			justify-content: space-between
 			margin-left: 0
-			// margin-left: auto
 	&-w
 		display: flex
 		align-items: center
-		justify-content: space-between
+		// justify-content: flex-end
 		padding: 10px 0
-
 	&__bottom
 		background-color: #f2f2f2
 		margin-top: 2px
 	&__search
-		display: none// !!!!!!!!!!!!!!!!!!!!!!!!
 		position: absolute
-		top: 100%
-		right: 0
-		width: 680px
-		max-width: 84vw
+		top: 135px
+		right: 205px
+		background-color: #f2f2f2
+		width: calc(100% - 300px - 190px)
 		padding: 4px
-		background-color: #d1d5de
 		border-radius: 0 0 4px 4px
+		z-index: 10
+		+r(1200)
+			width: calc(100% - 320px - 190px)
+		+r(1000)
+			width: calc(100% - 215px)
+		+r(620)
+			display: none
+			top: 200px
+			right: 20px
+			left: 20px
+			width: auto
+			background-color: #d1d5de
 		&.is-active
 			display: block
 			z-index: 10
 
+	.btn_search
+		position: absolute
+		width: 180px
+		top: 140px
+		right: 0
+		z-index: 10
+		+r(1200)
+			right: 20px
+
+	+ .section
+		padding-top: 120px
 
 .logo
 	display: flex
 	align-items: center
-	height: 56px
-	width: 60px
+	height: 80px
+	// width: 60px
 	&__img
 		display: inline-block
 		vertical-align: top
@@ -182,7 +226,8 @@
 		display: block
 		white-space: nowrap
 		color: #000
-		font-size: 14px
+		font-size: 16px
+
 		color: $blue
 		text-decoration: underline
 		+fr
@@ -192,8 +237,14 @@
 	display: flex
 	align-items: center
 	justify-content: space-between
-	+r(1200)
+	margin-left: 10%
+	+r(1100)
+		margin-left: 5%
+	+r(1000)
+		margin-left: 0
+	+r(560)
 		display: none
+
 	&__box
 		display: flex
 		flex-direction: column
@@ -202,38 +253,106 @@
 		display: inline-block
 		max-width: 100%
 		color: $black
-		font-size: 18px
+		font-size: 21px
+		// font-size: 18px
 		line-height: 20px
 		white-space: nowrap
 		+fr
+		+r(1200)
+			font-size: 18px
+		+r(560)
+			color: #fff
+			margin: 5px 0
 
 // -----------------------------------
 // ----- header bottom
 
 .catalog
-	position: relative
+	// position: relative
+	position: absolute
+	left: 0
+	top: 140px
+
 	display: inline-block
-	width: 51px
-	height: 51px
+	width: 280px
+	// height: 51px
 	z-index: 100
 	cursor: pointer
+	+r(1200)
+		left: 20px
+	+r(1000)
+		width: 51px
 	&:hover
 		.catalog__header
 			box-shadow: none
 			border-radius: 4px 4px 0 0
 		.menu
 			display: block
+		.btn-menu span
+			background: #fff
+			left: 37%
+			&:nth-child(1)
+				-webkit-transform: rotate(45deg)
+				-moz-transform: rotate(45deg)
+				-o-transform: rotate(45deg)
+				transform: rotate(45deg)
+				width: 40%
+			&:nth-child(2)
+				width: 0%
+				opacity: 0
+			&:nth-child(3)
+				-webkit-transform: rotate(-45deg)
+				-moz-transform: rotate(-45deg)
+				-o-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+				width: 40%
+	&__title
+		font-size: 16px
+		text-transform: uppercase
+		color: #fff
+		letter-spacing: .05em
+		+fb
+		+r(1000)
+			display: none
 
 	&__header
 		display: flex
 		align-items: center
-		justify-content: center
+		// justify-content: center
 		height: 100%
 		width: 100%
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, .2) inset
 		border-radius: 4px
 		+g(#ffb745, #ffc848)
 		overflow: hidden
+		.btn-menu
+			display: block
+			span
+				width: 22px
+				left: 50%
+				+trx(-50%)
+				background-color: #FFF
+				&:not(:first-child)
+					margin-top: 10%
+		&:hover
+			.btn-menu span
+				background: #fff
+				left: 37%
+				&:nth-child(1)
+					-webkit-transform: rotate(45deg)
+					-moz-transform: rotate(45deg)
+					-o-transform: rotate(45deg)
+					transform: rotate(45deg)
+					width: 41%
+				&:nth-child(2)
+					width: 0%
+					opacity: 0
+				&:nth-child(3)
+					-webkit-transform: rotate(-45deg)
+					-moz-transform: rotate(-45deg)
+					-o-transform: rotate(-45deg)
+					transform: rotate(-45deg)
+					width: 41%
 	&__title
 		text-transform: uppercase
 		color: #fff
@@ -301,13 +420,14 @@
 		border-bottom: 2px solid #fff
 
 .search
-	// position: relative
-	display: inline-block
-	width: 52px
-	height: 52px
-	+g(#e7e7e7, #c7cdd9)
-	border-bottom: 1px solid #a6b0ba
-	border-radius: 4px
+	// position: relative//old
+
+	// display: inline-block
+	// width: 52px
+	// height: 52px
+	// +g(#e7e7e7, #c7cdd9)
+	// border-bottom: 1px solid #a6b0ba
+	// border-radius: 4px
 	+r(550)
 		margin-right: 15px
 	&:hover
@@ -318,16 +438,27 @@
 		display: none
 		position: absolute
 		bottom: 0
-		right: 22.6%
+		right: 19%
 		+arr(12, 6, #d1d5de, t)
 		+r(1200)
-			right: 29.5%
+			right: 55%
 		+r(1050)
-			right: 28%
+			right: 52.5%
 		+r(1000)
-			right: 284px
-		+r(550)
-			right: 89px
+			right: 52%
+		+r(900)
+			right: 51%
+		+r(800)
+			right: 50%
+		+r(720)
+			right: 47%
+		+r(650)
+			right: 71%
+		+r(620)
+			top: 195px
+			right: auto
+			left: 40px
+			z-index: 20
 	&.is-active:after
 		display: inline-block
 	&__icon

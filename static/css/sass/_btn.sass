@@ -16,15 +16,14 @@
 		cursor: default
 	&_search
 		display: flex
-		height: 50px
+		height: 49px
 		letter-spacing: .05em
 		flex: 0 1 180px
 		border-bottom: 1px solid #d46200
 		+g(#FD8500, #FD8500)
-		+r(1000)
-			margin: 0 15px
-		+r(550)
-			display: none
+		// +r(1000)
+		// 	margin: 0 15px
+
 		&:hover
 			opacity: .9
 			border-color: $n
@@ -62,7 +61,7 @@
 		display: none
 		position: relative
 		width: 52px
-		height: 52px
+		height: 49px
 		background-color: $n
 		border: 1px solid $border
 		border: none
@@ -139,13 +138,20 @@
 			.st0
 				fill: #CCC
 	&-seach
+		display: none
 		position: relative
-		display: inline-block
+		// display: inline-block
 		width: 52px
 		height: 52px
 		+g(#e7e7e7, #c7cdd9)
 		border-bottom: 1px solid #a6b0ba
 		border-radius: 4px
+		+r(620)
+			display: inline-block
+			position: absolute
+			top: 140px
+			left: 20px
+			z-index: 10
 		&:hover
 			+g(#c7cdd9, #e7e7e7)
 			border-color: $n

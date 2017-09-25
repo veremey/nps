@@ -16,7 +16,7 @@ function GlobalMainClass() {
 
 			// if($item.length > 4) {
 				$(this).slick({
-				infinite: false,
+				infinite: true,
 				variableWidth: false,
 				slidesToShow: 4,
 				responsive: [
@@ -60,7 +60,7 @@ function GlobalMainClass() {
 
 			// if($item.length > 4) {
 				$(this).slick({
-				infinite: false,
+				infinite: true,
 				variableWidth: false,
 				slidesToShow: 4,
 				dots: true,
@@ -100,8 +100,9 @@ function GlobalMainClass() {
 		var $itemr = $(opt.item);
 
 		$slider.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
+			autoplay: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
@@ -119,7 +120,7 @@ function GlobalMainClass() {
 		var $itemNav = $(opt.itemNav);
 
 			$sliderFor.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -137,7 +138,7 @@ function GlobalMainClass() {
 			]
 		});
 		$sliderNav.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -182,7 +183,7 @@ function GlobalMainClass() {
 		var $itemNav = $(opt.itemNav);
 
 			$sliderFor.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -190,7 +191,7 @@ function GlobalMainClass() {
 			asNavFor: opt.sliderNav
 		});
 		$sliderNav.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
 			arrows: false,
 			slidesToShow: 3,
@@ -233,7 +234,7 @@ function GlobalMainClass() {
 		var $slideItem = $(opt.slideItem);
 
 		$slide.slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: false,
 			arrows: true,
 			dots: true,

@@ -18,18 +18,18 @@ $(document).ready(function() {
 
 	/*------- header ----*/
 	$('.guide__item').on('click', function () {
-
 		$(this).addClass('is-active').siblings('.guide__item').removeClass('is-active');
 	});
-
 
 	$('.btn-menu').on('click', function () {
 		$(this).toggleClass('is-active');
 		$('.guide').toggleClass('is-active');
+		$('.header').toggleClass('menu-open');
 	});
 
 	$('.btn-seach').on('click', function () {
 		$('.header__search, .search').toggleClass('is-active');
+		return false;
 	});
 
 	$(document).on('click', function(el){
@@ -40,6 +40,17 @@ $(document).ready(function() {
 			$('.search__input').val('');
 		}
 	});
+
+	$(window).on('scroll', function(event) {
+		// changing header
+		if($(window).scrollTop() >= 80) {
+
+			$('.header').addClass('page-scroll');
+		}
+		else {
+			$('.header').removeClass('page-scroll');
+		}
+	}).trigger('scroll');
 
 
 	/* --- close something ---*/

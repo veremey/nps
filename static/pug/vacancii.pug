@@ -24,13 +24,12 @@ block content
 						li.todo__item
 							p.desc-h Много интересной работы, возможность самореализации
 
-
 		section.section-gray.mod_first
-			.layout
+			.layout.mod-b-20
 				h3.title-section.ex На данный момент открыты вакансии:
 				h4.title-section Административный персонал
-				.vacancy
-					h5.vacancy__title Сварщик 5 разряда
+				.vacancy.is-open
+					h5.vacancy__title.is-open Сварщик 5 разряда
 					p.vacancy__desc Требования:
 					ul.vacancy__list
 						li.vacancy__item
@@ -39,7 +38,7 @@ block content
 							p.vacancy__desc Любите соревноваться;
 						li.vacancy__item
 							p.vacancy__desc Хотите много зарабатывать.
-					.vacancy__hidden
+					.vacancy__hidden.is-open
 						ul.vacancy__list
 							li.vacancy__item
 								p.vacancy__desc Доброжелательны, внимательны, приятные собеседники;
@@ -47,11 +46,19 @@ block content
 								p.vacancy__desc Любите соревноваться;
 							li.vacancy__item
 								p.vacancy__desc Хотите много зарабатывать.
+						p.vacancy__desc
+							b.desc-bold Если Вам это подходит заполните анкету!
+						a(href="#").btn.btn-text Заполнить анкету
+
+			.layout
+				.baum.slide-four-dots
+					include module/prodSlide.pug
+					include module/prodSlide.pug
 		section.section-gray.mod_first.bd-t
 			.layout
 				h4.title-section производственный персонал
-				.vacancy
-					h5.vacancy__title Сварщик 5 разряда
+				.vacancy.is-open
+					h5.vacancy__title.is-open Сварщик 5 разряда
 					p.vacancy__desc Требования:
 					ul.vacancy__list
 						li.vacancy__item
@@ -60,7 +67,7 @@ block content
 							p.vacancy__desc Любите соревноваться;
 						li.vacancy__item
 							p.vacancy__desc Хотите много зарабатывать.
-					.vacancy__hidden
+					.vacancy__hidden.is-open
 						p.vacancy__desc Если Вы:
 						ul.vacancy__list
 							li.vacancy__item
@@ -96,13 +103,10 @@ block content
 				p.desc-b.mod-b-10 Если Вы хотите стать частью нашей дружной команды, звоните: 8-952-472-88-48, 8-950-616-58-10
 				h2.title-section наша корпоративная жизнь
 			.layout.layout-b
-				.baum.mod-b-20
+				.baum
 					include module/pocket-news.pug
 					include module/pocket-news.pug
 					include module/pocket-news.pug
 					include module/pocket-news.pug
-				.layout
-					.baum.slide-four-dots
-						include module/prodSlide.pug
-						include module/prodSlide.pug
+
 		include layout/footer.pug

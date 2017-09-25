@@ -27,6 +27,7 @@
 		&.slick-slide
 			max-width: none
 	&__pic
+		display: block
 		position: relative
 		width: 100%
 		height: 340px
@@ -46,6 +47,7 @@
 		color: $dark
 		+fr
 	&__desc
+		display: block
 		font-size: 16px
 		color: $dark
 		margin-bottom: 10px
@@ -107,6 +109,11 @@
 	// &-half
 	// 	display: flex
 	// 	justify-content: space-between
+a.baum
+	&__pic,
+	&__desc
+		&:hover
+			opacity: .9
 
 .preview
 	&__top
@@ -244,7 +251,10 @@
 		align-items: center
 		margin-right: 40px
 		margin-bottom: 10px
+		&:hover
+			opacity: .9
 	&__pic
+		display: inline-block
 		position: relative
 		width: 42px
 		height: 46px
@@ -296,6 +306,7 @@
 		justify-content: center
 		border: 1px solid $border
 	&__pic
+		display: block
 		position: relative
 		height: 195px
 		background-color: #FFF
@@ -308,12 +319,13 @@
 			.prod__img
 				max-width: none
 				max-height: none
-				min-width: 100%
-				min-height: 100%
+				min-width: 114%
+				min-height: 114%
 	&__img
 		+vcenter
 		max-width: 96%
 		max-height: 96%
+		+tr(.2s)
 
 	&__footer
 		background-color: #3d444c
@@ -321,6 +333,7 @@
 		padding: 20px
 		transform: translate3d(0, 0, 0)
 	&__title
+		display: block
 		font-size: 20px
 		line-height: 1.1
 		color: #fff
@@ -354,6 +367,17 @@
 				+pr
 				&:hover
 					border-color: $n
+
+a.prod
+	&__pic,
+	&__title
+		&:hover
+			opacity: .9
+	&__item:hover
+		.prod__img
+			transform: translate(-50%, -50%) scale(.9)
+			+tr(.4s)
+
 
 .slide-four-dots
 	padding-bottom: 10px
@@ -401,6 +425,7 @@
 		+r(600)
 			flex-direction: column
 	&__pic
+		display: inline-block
 		position: relative
 		width: 50%
 		overflow: hidden
@@ -524,6 +549,10 @@
 				margin-top: 20px
 		&__desc
 			+limitLines(6, 6, #fff, #fff)
+
+a.pocket__pic
+	&:hover
+		opacity: .9
 
 .new
 	margin-bottom: 10px

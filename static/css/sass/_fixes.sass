@@ -1,3 +1,112 @@
+.page-scroll
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2000
+	.logo
+		display: flex
+		align-items: center
+		height: 56px
+		width: 60px
+		#Layer_1
+			g
+			.st0
+				display: none
+			.st1
+				display: none
+			.st10
+				transform-origin: 0% 50%
+				transform: scale(2)
+
+	.catalog
+		position: relative
+		top: 0
+		left: 0
+		width: 51px
+		// height: 51px
+		&__header
+			justify-content: center
+		&__title
+			display: none
+	.info
+		+r(1200)
+			order: 2
+	.header
+		&__top
+			height: auto
+			&:after
+				height: 0
+		&__search
+			display: none
+			top: 100%
+			right: 0
+			width: 680px
+			max-width: 84vw
+			background-color: #d1d5de
+			&.is-active
+				display: block
+				right: 20px
+		&-l
+			width: 13%
+			+r(1000)
+				position: static
+				+trx(0)
+		&-r,
+		&-l
+			justify-content: space-between
+		&-r
+			+r(1200)
+				width: 100%
+
+	.guide
+		+r(1200)
+			display: none
+		&__link
+			font-size: 14px
+	.btn-menu
+		+r(1200)
+			display: inline-block
+	.phone
+		margin-left: 0px
+		+r(650)
+			display: none
+		&__link
+			font-size: 18px
+	.search:after
+		top: 70px
+		left: auto
+		right: 110px
+	.btn-seach
+		display: inline-block
+		+r(620)
+			top: 10px
+			left: auto
+			right: 90px
+	.btn_search
+		position: static
+		+r(650)
+			width: 140px
+			flex: 0 1 140px
+		+r(620)
+			display: none
+	+ .section
+		padding-top: 200px
+
+.menu-open
+	.phone
+		+r(650)
+			display: flex
+			position: fixed
+			bottom: 40px
+			left: 50%
+			+trx(-50%)
+			margin: 0
+			z-index: 200
+			.phone__link
+				color: #fff
+
+
 .mod_first
 	padding-top: 20px
 .mod-b-10
