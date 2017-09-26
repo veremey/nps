@@ -119,6 +119,7 @@ a.baum
 	&__top
 		margin-bottom: 30px
 	&__box
+		display: block
 		position: relative
 		border: 1px solid $border
 		border-radius: 6px
@@ -995,6 +996,7 @@ a.pocket__pic
 		border-radius: 6px
 		overflow: hidden
 		outline: none
+		will-change: transform
 	&__pic
 		&:after
 			content: ''
@@ -1017,7 +1019,11 @@ a.pocket__pic
 		position: absolute
 		top: 50%
 		left: 10%
-		transform: translate3d(0, -50%, 0)
+
+		transform: translate(0%, -50%)
+		-webkit-font-smoothing: antialiased
+		backface-visibility: hidden
+		// transform: translate3d(0, -50%, 0)
 		width: 80%
 	&__title
 		letter-spacing: .05em
@@ -1036,6 +1042,10 @@ a.pocket__pic
 		margin-bottom: 20px
 		font-size: 18px
 		color: #fff
+		-webkit-font-smoothing: antialiased
+		will-change: transform
+		transform: translate(0%, 0%)
+		backface-visibility: hidden
 		+pr
 		+r(800)
 			width: 90%

@@ -62,6 +62,29 @@
 	.guide
 		+r(1200)
 			display: none
+			&.is-active
+				display: block
+				position: fixed
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: rgba(0, 0, 0, .9)
+				.guide__list
+					display: block
+					margin-top: 100px
+					padding: 0 20px
+				.guide__item
+					display: block
+					text-align: center
+					margin-bottom: 10px
+					padding-right: 0
+				.guide__link
+					font-size: 16px
+				.subguide
+					width: calc(100% + 2px)
+					border-radius: 0 0 10px 10px
+					z-index: 10
 		&__link
 			font-size: 14px
 	.btn-menu
