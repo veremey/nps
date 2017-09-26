@@ -21,10 +21,12 @@ $(document).ready(function() {
 		$(this).addClass('is-active').siblings('.guide__item').removeClass('is-active');
 	});
 
-	$('.btn-menu').on('click', function () {
-		$(this).toggleClass('is-active');
-		$('.guide').toggleClass('is-active');
-		$('.header').toggleClass('menu-open');
+	$('.js-menu').on('click', function () {
+
+			$(this).toggleClass('is-active');
+			$('.guide').toggleClass('is-active');
+			$('.header').toggleClass('menu-open');
+
 	});
 
 	$('.btn-seach').on('click', function () {
