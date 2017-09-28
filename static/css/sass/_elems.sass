@@ -59,7 +59,6 @@
 		margin: 0 auto
 		max-width: 100%
 
-
 .main
 	display: flex
 	flex: 1 1 auto
@@ -138,11 +137,16 @@
 		+r(650)
 			align-items: flex-start
 		// justify-content: space-between
-	&__img
+	&__pic
+		vertical-align: top
 		margin-right: 20px
+		// width: 76px
+		// height: 50px
+	&__img
 		display: inline-block
 		vertical-align: top
 		width: 76px
+
 		&_max
 			height: auto
 			width: 100%
@@ -161,6 +165,8 @@
 			+fl
 	&__text
 		margin-top: 15px
+		box-sizing: border-box
+		max-width: 100%
 	&__conteiner
 		padding: 20px
 	p
@@ -169,6 +175,7 @@
 		display: inline-block
 		width: 31%
 		margin-right: 2%
+		vertical-align: middle
 		+r(800)
 			width: 100%
 			margin-right: 0
@@ -189,7 +196,7 @@
 			height: 112px
 			width: auto
 			+r(800)
-				width: 20%
+				width: 100%
 				height: auto
 	&-border
 		border: 1px solid $border
