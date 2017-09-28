@@ -154,19 +154,25 @@
 		color: #ffc462
 		font-size: 100px
 		margin-bottom: 0
-		line-height: .6
+		height: 112px
+		line-height: 1.6
 		+fel
 		+r(1200)
 			font-size: 8vw
 		+r(800)
 			line-height: 1
 			margin-right: 20px
+			height: auto
+		+r(500)
+			font-size: 10vw
 		sup
 			+fl
 	&__text
 		margin-top: 15px
 		box-sizing: border-box
 		max-width: 100%
+		+r(800)
+			margin-top: 5px
 	&__conteiner
 		padding: 20px
 	p
@@ -175,7 +181,7 @@
 		display: inline-block
 		width: 31%
 		margin-right: 2%
-		vertical-align: middle
+		vertical-align: top
 		+r(800)
 			width: 100%
 			margin-right: 0
@@ -184,7 +190,6 @@
 			margin-bottom: 15px
 			&:last-child
 				margin-bottom: 0
-
 		.half__wrap
 			flex-direction: column
 			justify-content: flex-start
@@ -196,8 +201,9 @@
 			height: 112px
 			width: auto
 			+r(800)
-				width: 100%
-				height: auto
+				margin-bottom: 15px
+			// 	width: 100%
+			// 	height: auto
 	&-border
 		border: 1px solid $border
 		border-radius: 6px
