@@ -923,9 +923,9 @@ a.pocket__pic
 	z-index: 1
 	margin: 0px 30px 60px
 	cursor: pointer
-	height: 320px
+	// height: 320px
 	width: 256px
-	// overflow: hidden
+	// padding: 15px
 	&:before
 		content: ''
 		+vcenter
@@ -940,12 +940,24 @@ a.pocket__pic
 		height: 63%
 		box-shadow: -16px 0px 24px 53px rgba(0, 0, 0, .6)
 		z-index: -1
-	&__pic
+	&__link
+		border: 10px solid #000
+		background-color: #FFF
+		display: block
 		height: 320px
-		width: 2560px
+		padding: 15px
+		border: 10px solid #000
+		// overflow: hidden
+	&__pic
+		position: relative
+		height: 270px
+		width: 206px
+		// border: 10px solid #000
 		overflow: hidden
 	&__img
-		max-width: 100%
+		+vcenter
+		max-height: 100%
+		min-width: 100%
 
 .sotr
 	position: relative
